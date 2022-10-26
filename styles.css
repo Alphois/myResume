@@ -80,15 +80,55 @@ text-transform: uppercase;
   font-size: 16px;
   position:relative;
 }
+.resume .resume_left ul li .dumb_icon{
+  width:35px;
+  height:35px;
+  background: #fff;
+  color: #0bb5f4;
+  border-radius:50%;
+  margin-left:0px;
+  font-size: 16px;
+  position:relative;
+}
+.resume .resume_left ul li .dumb_icon2{
+  width:35px;
+  height:35px;
+  background: #fff;
+  color: #0bb5f4;
+  border-radius:50%;
+  margin-left:0px;
+  font-size: 16px;
+  position:relative;
+}     
+
 .resume .icon i{
   position: absolute;
   top:50%;
   left:50%;
   transform:translate(-50%,-50%);
 }
+#tester{
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-40%,-60%);
+}
+#tester2{
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-40%,-60%);
+}
 .resume .resume_left ul li .data{
   color: #b1eaff;
 }
+.resume .resume_left ul li .dumb_data{
+  color: #b1eaff;
+  width:10%;
+  /* somehow this width property standardizes the envelope size */
+  margin-left:10px;
+}
+
 .resume .resume_left .resume_skills ul li{
   color: #b1eaff;
   justify-content: space-between;
@@ -122,7 +162,7 @@ text-transform: uppercase;
 .resume .resume_right{
   width:700px;
   background: #fff;
-  padding:25px;
+  padding:15px;
 }
 .resume .resume_right .bold{
   color: #0bb5f4
@@ -138,10 +178,28 @@ text-transform: uppercase;
   position: relative;
 }
 .resume .resume_right ul li .date{
-  font-size: 16px;
+  font-family:'Noto Serif', serif;
+  font-size: 14px;
   font-weight:400;
   margin-bottom:5px;
 }
+.title2{
+  font-size: 16px;
+  font-weight:700;
+  margin-bottom:1px;
+}
+.resume .resume_right ul li .title2{
+  font-size: 16px;
+  font-weight:700;
+  margin-bottom:5px;
+}
+.resume .resume_right ul li .title3{
+  font-size: 20px;
+  font-weight:400;
+  margin-bottom:5px;
+  padding-left:-20px;
+}
+
 .resume .resume_right ul li.info{
   margin-bottom:20px;
 }
@@ -166,11 +224,15 @@ text-transform: uppercase;
   height: 6px;
   border-radius:50%;
   border: 2px solid #0bb5f4;
+  display:flex;
+  justify-content:space-between;
 }
-.resume .resume_right .resume_education ul li:after,
+
+/* .resume .resume_right .resume_education ul li:after, */
 /* .resume .resume_right .resume_work ul li:after, */
 .resume .resume_right .resume_projects ul li:after,
-.resume .resume_right .resume_activities ul li:after{
+.resume .resume_right .resume_activities ul li:after
+{
 content:"";
 position: absolute;
 top:14px;
